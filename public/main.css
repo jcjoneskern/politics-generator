@@ -3,31 +3,41 @@ body {
 }
 img {
   float: left;
-  width: 40%;
+  width: 45%;
 }
 main {
   width: 90%;
   margin: 0 auto;
 }
+section {
+  width: 50%;
+  float: right;
+}
+#orders {
+  text-align: center;
+  width: auto;
+  display: block;
+}
 .bubble {
   box-sizing: border-box;
   padding: 10px;
   border: 1px solid black;
-  width: 50%;
   float: right;
   position: relative;
   border-radius: 7px;
+  width: 100%;
 }
 .bubble:after
 {
 content: '';
 position: absolute;
 border-style: solid;
-border-width: 15px 15px 15px 0;
+border-width: 10px 15px 10px 0;
 border-color: transparent #FFFFFF;
 display: block;
 width: 0;
 z-index: 1;
+margin-top: -10px;
 left: -15px;
 top: 25%;
 }
@@ -37,11 +47,12 @@ top: 25%;
 content: '';
 position: absolute;
 border-style: solid;
-border-width: 15px 15px 15px 0;
+border-width: 10px 15px 10px 0;
 border-color: transparent #000;
 display: block;
 width: 0;
 z-index: 0;
+margin-top: -10px;
 left: -16px;
 top: 25%;
 }
