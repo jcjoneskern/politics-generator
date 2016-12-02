@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+}
+img {
+  float: left;
+  width: 40%;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+.bubble {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid black;
+  width: 50%;
+  float: right;
+  position: relative;
+  border-radius: 7px;
+}
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 15px 0;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+left: -15px;
+top: 25%;
+}
+
+.bubble:before
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 15px 0;
+border-color: transparent #000;
+display: block;
+width: 0;
+z-index: 0;
+left: -16px;
+top: 25%;
+}
+/*With help from http://ilikepixels.co.uk/drop/bubbler/*/
