@@ -1,13 +1,19 @@
 $(function() {
-  $("#orders").on("click", function() {
-    $.get('/api/quote', function(data){
-      $("#quote").html(data);
-    });
-    $(this).html() == "Be quiet!" ? $(this).html('I order you to be quiet!') : $(this).html('Be quiet!');
-  });
-
+  $("#orders").on("click", getQuotes);
+  
   $.get('/api/quote', function(data){
     $("#quote").html(data);
   });
+
+  function getQuotes() {
+    $.get('/api/quote', function(data){
+      $("#quote").html(data);
+    });
+    $.get('/api/king', function(data){
+      $("#orders").html(data);
+    });
+  }
+
+
 
 });

@@ -5,6 +5,9 @@ main {
   width: 70%;
   margin: 0 auto;
 }
+img {
+  border-radius: 10px;
+}
 #dennis {
   float: left;
   width: 45%;
